@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-------------PRELOADER----------------->
+    <div class="preload">
+        <div class="circles-group">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+
+    <!------------VERTICAL NAVIGATION-------------->
+    <nav id="main-nav">
+        <ul>
+            <li class="active" onclick="goto(0);">
+                <a href="#home">
+					<span class="dots"></span>
+					<span class="tooltip">Home</span>
+				</a>
+            </li>
+            <li onclick="goto(1);">
+                <a href="#about">
+					<span class="dots"></span>
+					<span class="tooltip">About</span>
+				</a>
+            </li>
+            <li onclick="goto(2);">
+                <a href="#skills">
+					<span class="dots"></span>
+					<span class="tooltip">Skills</span>
+				</a>
+            </li>
+            <li onclick="goto(3);">
+                <a href="#works">
+					<span class="dots"></span>
+					<span class="tooltip">Works</span>
+				</a>
+            </li>
+            <li onclick="goto(4);">
+                <a href="#contact">
+					<span class="dots"></span>
+					<span class="tooltip">Contact</span>
+				</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!---------------FULL ONE PAGE PARALLAX----------------->
+    <div id="full-page" class="container">
+        <header id="home" class="background">
+            <div class="content-wrapper">
+                <div id="typedtext"></div>
+                <a href="#about" class="scroll-down-btn cd-img-replace"></a>
+            </div>
+        </header>
+        <section id="about" class="background">
+            <div class="content-wrapper">
+                <p class="content-title">ABOUT SECTION</p>
+                <p class="content-subtitle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut massa mattis nibh semper pretium.</p>
+            </div>
+        </section>
+        <section id="skills" class="background">
+            <div class="content-wrapper">
+                <p class="content-title">SKILLS SECTION</p>
+                <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+            </div>
+        </section>
+        <section id="works" class="background">
+            <div class="content-wrapper">
+                <p class="content-title">WORKS SECTION</p>
+                <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+            </div>
+        </section>
+        <section id="contact" class="background">
+            <div class="content-wrapper">
+                <p class="content-title">CONTACT SECTION</p>
+                <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+            </div>
+        </section>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/jquery.ba-throttle-debounce.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
