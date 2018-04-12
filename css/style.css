@@ -134,11 +134,11 @@ body {
 }
 
 .background:nth-child(2) {
-    background-image: url(https://s8.postimg.org/ow4wgk4px/ugqti_Lg.jpg);
+    background-image: url(../img/bg-parallax2.jpg);
 }
 
 .background:nth-child(3) {
-    background-image: url(https://s8.postimg.org/grwsbtiat/x_ZMOBTj.jpg);
+    background-image: url(../img/bg-parallax4.jpg);
 }
 
 .background:nth-child(4) {
