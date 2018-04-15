@@ -2,9 +2,7 @@
 var preload = $('.preload')[0];
 preload.classList.add('show-preloader');
 $(window).on('load', function () {
-    setTimeout(function () {
-        preload.classList.remove('show-preloader');
-    }, 1000)
+   preload.classList.remove('show-preloader');
 });
 
 $(document).ready(function () {
