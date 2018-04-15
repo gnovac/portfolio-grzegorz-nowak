@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Grzegorz Nowak - Front Web Developer</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Montserrat:700|Waiting+for+the+Sunrise" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,7 +22,7 @@
     </div>
 
 
-    <!------------VERTICAL NAVIGATION-------------->
+    <!------------VERTICAL DOTS NAVIGATION-------------->
     <nav id="main-nav">
         <ul>
             <li class="active" onclick="goto(0);">
@@ -35,25 +34,25 @@
             <li onclick="goto(1);">
                 <a href="#about">
 					<span class="dots"></span>
-					<span class="tooltip">About</span>
+					<span class="tooltip">O mnie</span>
 				</a>
             </li>
             <li onclick="goto(2);">
                 <a href="#skills">
 					<span class="dots"></span>
-					<span class="tooltip">Skills</span>
+					<span class="tooltip">Umiejętności</span>
 				</a>
             </li>
             <li onclick="goto(3);">
                 <a href="#works">
 					<span class="dots"></span>
-					<span class="tooltip">Works</span>
+					<span class="tooltip">Projekty</span>
 				</a>
             </li>
             <li onclick="goto(4);">
                 <a href="#contact">
 					<span class="dots"></span>
-					<span class="tooltip">Contact</span>
+					<span class="tooltip">Kontakt</span>
 				</a>
             </li>
         </ul>
@@ -61,34 +60,83 @@
 
     <!---------------FULL ONE PAGE PARALLAX----------------->
     <div id="full-page" class="container">
+        <!--       HEADER SECTION START-->
         <header id="home" class="background">
-            <div class="content-wrapper">
+            <div class="content-inner">
                 <div id="typedtext"></div>
-                <a href="#about" class="scroll-down-btn cd-img-replace"></a>
+            </div>
+            <!-------animated scroll mouse icon------->
+            <div class="scroll-downs">
+                <div class="mousey">
+                    <div class="scroller"></div>
+                </div>
             </div>
         </header>
+        <!--        ABOUT SECTION START-->
         <section id="about" class="background">
-            <div class="content-wrapper">
-                <p class="content-title">ABOUT SECTION</p>
-                <p class="content-subtitle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut massa mattis nibh semper pretium.</p>
+            <div class="content-inner">
+                <h2 class="content-title">ABOUT SECTION</h2>
+                <p class="content-subtitle">Work in progress...</p>
             </div>
         </section>
+        <!--        SKILLS SECTION START-->
         <section id="skills" class="background">
-            <div class="content-wrapper">
-                <p class="content-title">SKILLS SECTION</p>
-                <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+            <div class="content-inner">
+                <h2 class="content-title">SKILLS</h2>
+                <div class="skills-boxes">
+                    <figure>
+                        <img src="img/html5.png" alt="html icon">
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/css3.png" alt="css3 icon">
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/javascript.png" alt="javascript icon">
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/jquery.png" alt="jquery icon">
+                        <figcaption>jQuery</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/bootstrap.png" alt="bootstrap 4 icon">
+                        <figcaption>Bootstrap 4</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/sass.png" alt="sass icon">
+                        <figcaption>SASS</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/nodejs.png" alt="nodejs icon">
+                        <figcaption>NODE</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/gulp.png" alt="gulp icon">
+                        <figcaption>GULP</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/github.png" alt="github icon">
+                        <figcaption>GitHub</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/wordpress.png" alt="wordpress icon">
+                        <figcaption>WordPress</figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
         <section id="works" class="background">
-            <div class="content-wrapper">
-                <p class="content-title">WORKS SECTION</p>
-                <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+            <div class="content-inner">
+                <h2 class="content-title">WORKS SECTION</h2>
+                <p class="content-subtitle">Work in progress...</p>
             </div>
         </section>
         <section id="contact" class="background">
-            <div class="content-wrapper">
-                <p class="content-title">CONTACT SECTION</p>
-                <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam dapibus.</p>
+            <div class="content-inner">
+                <h2 class="content-title">CONTACT SECTION</h2>
+                <p class="content-subtitle">Work in progress...</p>
             </div>
         </section>
     </div>

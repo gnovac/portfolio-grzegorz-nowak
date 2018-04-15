@@ -5,7 +5,7 @@ body {
 
 }
 
-/*=====PRELOADER STYLES=====*/
+/*=====PRELOADER=====*/
 
 .preload {
     display: -webkit-box;
@@ -18,7 +18,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     position: fixed;
-    z-index: 10000;
+    z-index: 100;
     visibility: hidden;
     opacity: 0;
     width: 100vw;
@@ -91,7 +91,7 @@ body {
 }
 
 
-/*=============PARALLAX STYLES================*/
+/*=============PARALLAX EFFECT================*/
 
 .background {
     background-size: cover;
@@ -128,7 +128,7 @@ body {
     transform: translateY(-15vh);
 }
 
-.background:first-child .content-wrapper {
+.background:first-child .content-inner {
     -webkit-transform: translateY(15vh);
     transform: translateY(15vh);
 }
@@ -146,7 +146,7 @@ body {
 }
 
 .background:nth-child(5) {
-    background-image: url(../img/bg-parallax1.jpg);
+    background-image: url(../img/contact-background.png);
 }
 
 /* Set stacking context of slides */
@@ -171,7 +171,7 @@ body {
     z-index: 1;
 }
 
-.content-wrapper {
+.background .content-inner {
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -185,7 +185,6 @@ body {
     -ms-flex-flow: column nowrap;
     flex-flow: column nowrap;
     color: #fff;
-    font-family: Montserrat;
     -webkit-transform: translateY(40vh);
     transform: translateY(40vh);
     will-change: transform;
@@ -195,9 +194,10 @@ body {
     transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
 }
 
-.content-title {
-    font-size: 12vh;
-    line-height: 1.4;
+.background .content-inner .content-title {
+    margin-top: 0;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .background.up-scroll {
@@ -205,7 +205,7 @@ body {
     transform: translate3d(0, -15vh, 0);
 }
 
-.background.up-scroll .content-wrapper {
+.background.up-scroll .content-inner {
     -webkit-transform: translateY(15vh);
     transform: translateY(15vh);
 }
@@ -215,7 +215,7 @@ body {
     transform: translate3d(0, 30vh, 0);
 }
 
-.background.up-scroll + .background .content-wrapper {
+.background.up-scroll + .background .content-inner {
     -webkit-transform: translateY(30vh);
     transform: translateY(30vh);
 }
@@ -225,7 +225,7 @@ body {
     transform: translate3d(0, -130vh, 0);
 }
 
-.background.down-scroll .content-wrapper {
+.background.down-scroll .content-inner {
     -webkit-transform: translateY(40vh);
     transform: translateY(40vh);
 }
@@ -235,29 +235,14 @@ body {
     transform: translate3d(0, -15vh, 0);
 }
 
-.background.down-scroll + .background:not(.down-scroll) .content-wrapper {
+.background.down-scroll + .background:not(.down-scroll) .content-inner {
     -webkit-transform: translateY(15vh);
     transform: translateY(15vh);
 }
 
 
 
-/*==================NAVIGATION DOTS=====================*/
-
-/*header-arrow button*/
-
-.scroll-down-btn {
-    position: absolute;
-    left: 50%;
-    right: auto;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    bottom: 20px;
-    width: 38px;
-    height: 44px;
-    background: url("../img/cd-arrow-bottom.svg") no-repeat center center;
-}
-
+/*==================VERTICAL NAVIGATION DOTS=====================*/
 
 #main-nav {
     z-index: 10;
@@ -301,6 +286,7 @@ body {
 #main-nav .dots {
     text-align: center;
     position: relative;
+    top:3px;
     line-height: 3;
     height: 25px;
     width: 25px;
@@ -324,12 +310,11 @@ body {
 }
 
 #main-nav .tooltip {
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     margin-right: 10px;
     padding: .4em .5em;
     color: white;
-    font-size: 20px;
-    font-size: 0.875rem;
     -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
     -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
     transition: opacity 0.2s, -webkit-transform 0.2s;
@@ -341,28 +326,156 @@ body {
 }
 
 
-/*==================TYPEWRITING STYLES=============*/
+/*==================HEADER TYPEWRITING=============*/
+
 #typedtext {
     font-family: 'La Belle Aurore', cursive;
     font-size: 25px;
-    margin: 10px 50px;
     letter-spacing: 6px;
-    font-weight: bold;
     text-align: left;
-    margin-left: 25vw;
-    margin-bottom:  20vh;
+    margin-left: 23vw;
+    margin-bottom: 15vh;
+    color: #465f91;
 }
 
-#typedtext p{
+#typedtext p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#typedtext h3 {
+    font-size: 25px;
     margin-left: 5vw;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: normal;
 }
 
-#typedtext h1{
+#typedtext h1 {
     margin-left: 10vw;
     margin-bottom: 0;
     margin-top: 0;
     font-family: 'Waiting for the Sunrise', cursive;
-    font-size: 30px;
+    font-size: 40px;
+    color: #fff;
 }
+
+#typedtext span {
+    -webkit-animation: 1s dash step-end infinite;
+    animation: 1s dash step-end infinite;
+}
+
+@-webkit-keyframes dash {
+    0%,
+    100% {
+        color: transparent;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+@keyframes dash {
+    0%,
+    100% {
+        color: transparent;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+/*==================HEADER ANIMATED SCROLL MOUSE ICON=============*/
+
+.scroll-downs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.scroll-downs .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.scroll-downs .mousey .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+    -webkit-animation-duration: 2.2s;
+    animation-duration: 2.2s;
+    -webkit-animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+/*==================SKILLS ICONS STYLES==========*/
+.skills-boxes{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+
+.skills-boxes figure img{
+    width: 75px;
+    height: 75px;
+}
+
