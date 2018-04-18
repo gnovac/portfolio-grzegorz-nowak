@@ -217,8 +217,8 @@ function scrollLinksActive() {
 var Text = new Array(
     "<p>&ltbody&gt</p>",
     "<h3>&lth1&gt</h3>",
-    "<h1>Hej,",
-    "Jestem Grzegorz,",
+    "<h1>Hi,",
+    "I'm Grzegorz,",
     "front end developer.</h1>",
     "<h3>&lt/h1&gt</h3>",
     "<p>&lt/body&gt</p>"
