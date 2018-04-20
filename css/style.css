@@ -119,11 +119,11 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .background:first-child {
-    background-image: url(../img/parallax-header.jpeg);
+    background-image: url(../img/header-background.jpeg);
     -webkit-transform: translateY(-15vh);
     transform: translateY(-15vh);
 }
@@ -134,19 +134,19 @@ body {
 }
 
 .background:nth-child(2) {
-    background-image: url(../img/pexels-photo-696644.jpeg);
+    background-image: url(../img/about-background.jpeg);
 }
 
 .background:nth-child(3) {
-    background-image: url(../img/stock-vector-light-bulb-with-gears-and-cogs-working-together-eps-vector-background-for-your-design-348400238.jpg);
+    background-image: url(../img/skills-background.jpg);
 }
 
 .background:nth-child(4) {
-    background-image: url(../img/footer_lodyas.png);
+    background-image: url(../img/project-background.png);
 }
 
 .background:nth-child(5) {
-    background-image: url(../img/808145472.jpg);
+    background-image: url(../img/contact-background.jpg);
 }
 
 /* Set stacking context of slides */
@@ -192,13 +192,6 @@ body {
     backface-visibility: hidden;
     -webkit-transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
     transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
-}
-
-.background .content-inner .content-title {
-    margin-top: 0;
-    font-size: 50px;
-    font-family: 'Montserrat', sans-serif;
-    color: #465f91;
 }
 
 .background.up-scroll {
@@ -326,6 +319,23 @@ body {
     transform-origin: 100% 50%;
 }
 
+/*===============SLIDE TITLE & TAGS=================*/
+
+.background .content-inner .content-title {
+    margin-top: 0;
+    margin-bottom: 5vh;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #465f91;
+}
+
+.background .content-inner .tags {
+    color: #465f91;
+    font-family: 'La Belle Aurore', cursive;
+    text-align: left;
+    margin-left: 25px;
+    font-size: 25px;
+}
 
 /*==================HEADER TYPEWRITING=============*/
 
@@ -335,7 +345,7 @@ body {
     letter-spacing: 6px;
     text-align: left;
     margin-left: 23vw;
-    margin-bottom: 15vh;
+    margin-bottom: 16vh;
     color: #465f91;
 }
 
@@ -385,6 +395,8 @@ body {
         color: #fff;
     }
 }
+
+
 
 /*==================HEADER ANIMATED SCROLL MOUSE ICON=============*/
 
@@ -479,4 +491,140 @@ body {
 .skills-boxes figure img {
     width: 75px;
     height: 75px;
+}
+
+/*=============PROJECTS SECTION=============*/
+
+.projects-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.image-box {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #444;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    max-width: 320px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.image-box * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+
+.image-box:after {
+    background-color: #465f91;
+    height: 150%;
+    bottom: -145%;
+    content: '';
+    left: 0;
+    right: 0;
+    position: absolute;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.image-box img {
+    vertical-align: top;
+    width: 320px;
+    height: 200px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.image-box figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.image-box h3 {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.image-box h3 span {
+    display: block;
+    font-weight: 700;
+}
+
+.image-box p{
+    font-size: 15px;
+}
+
+.image-box a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.image-box:hover > img,
+.image-box.hover > img {
+    opacity: 0.1;
+}
+
+.image-box:hover:after,
+.image-box.hover:after {
+    bottom: 95%;
+}
+
+.image-box:hover figcaption,
+.image-box.hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+
+footer {
+    background-color: #fff;
+    color: #000;
 }

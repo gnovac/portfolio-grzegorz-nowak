@@ -215,15 +215,16 @@ function scrollLinksActive() {
 
 //====================TYPEWRITER EFFECT======================//
 var Text = new Array(
+    "<p></p><p></p>",
     "<p>&ltbody&gt</p>",
     "<h3>&lth1&gt</h3>",
-    "<h1>Hi,",
-    "I'm Grzegorz,",
+    "<h1>Hej,",
+    "Jestem Grzegorz,",
     "front end developer.</h1>",
     "<h3>&lt/h1&gt</h3>",
     "<p>&lt/body&gt</p>"
 );
-var Speed = 100; // time delay of print out
+var Speed = 65; // time delay of print out
 var Index = 0; // start printing array at this posision
 var ArrLength = Text[0].length; // the length of the text array
 var ScrollAt = 20; // start scrolling up at this many lines
@@ -254,4 +255,3 @@ function typewriter() {
         setTimeout("typewriter()", Speed);
     }
 }
-
