@@ -6,7 +6,7 @@
     <title>Grzegorz Nowak - Front Web Developer</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Montserrat:700|Waiting+for+the+Sunrise|Roboto:100,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=La+Belle+Aurore|Montserrat:400,700|Roboto+Slab|Roboto:400,700|Waiting+for+the+Sunrise" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -40,7 +40,7 @@
             <li onclick="goto(2);">
                 <a href="#skills">
 					<span class="dots"></span>
-					<span class="tooltip">Umiejętności</span>
+					<span class="tooltip">Technologie</span>
 				</a>
             </li>
             <li onclick="goto(3);">
@@ -83,7 +83,7 @@
         <!--        SKILLS SECTION START-->
         <section id="skills" class="background">
             <div class="content-inner">
-                <h2 class="content-title">Umiejętności</h2>
+                <h2 class="content-title">Technologie</h2>
                 <div class="tags">&ltskills&gt</div>
                 <div class="skills-boxes">
                     <figure>
@@ -184,13 +184,35 @@
                 <div class="tags">&lt/projects&gt</div>
             </div>
         </section>
-        <!--        CONTACT SECTION START-->
         <section id="contact" class="background">
             <div class="content-inner">
                 <h2 class="content-title">Napisz do mnie</h2>
-                <div class="tags">&ltcontact&gt</div>
-                <p>Work in progress...</p>
-                <div class="tags">&lt/contact&gt</div>
+                <div class="contact-content">
+                    <div class="tags tag1">&ltcontact&gt</div>
+                    <div class="contact-address">
+                        <h4>Kontakt</h4>
+                        <address>
+                            <p>Grzegorz <span>Nowak</span></p>
+                            <p>Kraków</p>
+                            <div class="social-icons">
+                                <a href="mailto:grzesiek6493@gmail.com"> <i class="fa fa-envelope" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/grzegorz-nowak-12b236ba/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="https://github.com/gnovac"><i class="fa fa-github" aria-hidden="true"></i></a> 
+                            </div>
+                            <div id="map"></div>
+                        </address>
+                    </div>
+                    <div class="contact-form">
+                        <h4>Formularz Kontaktowy</h4>
+                        <form action="https://formspree.io/grzesiek6493@gmail.com" method="post">
+                            <input type="text" name="name" id="name" placeholder="Nazwa" required autofocus>
+                            <input type="mail" name="email" id="email" placeholder="Adres e-mail" required multiple>
+                            <textarea name="msg" id="" cols="30" rows="15" placeholder="Wiadomość" required></textarea>
+                            <input type="submit" value="Wyślij">
+                        </form>
+                    </div>
+                    <div class="tags tag2">&lt/contact&gt</div>
+                </div>
                 <footer>
                     <p>copyright</p>
                 </footer>
@@ -200,6 +222,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/lodash.min.js"></script>
     <script src="js/jquery.ba-throttle-debounce.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmDKKlSl6Ez7U0bsxIsTNcF_gkhjTlCxI&callback=initMap"></script>
     <script src="js/main.js"></script>
 </body>
 
