@@ -678,14 +678,28 @@ body {
     align-items: center;
 }
 
-#contact .content-inner .contact-content .contact-address h4 {
-    margin-top: 0;
+#contact .content-inner .contact-content .contact-address .shape {
+    text-align: center;
     background-color: #151515;
-    padding: 10px;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    text-transform: uppercase;
+    width: 32vw;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    position: relative;
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#contact .content-inner .contact-content .contact-address .shape::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid #151515;
+    border-right: 40px solid transparent;
+    position: absolute;
+    left: 100%;
+    top: 0px;
 }
 
 #contact .content-inner .contact-content .contact-address address p,
@@ -694,9 +708,10 @@ body {
     margin-top: 1vh;
     font-family: 'Montserrat', sans-serif;
     width: 80%;
+    font-weight: 700;
 }
 
-#contact .content-inner .contact-content .contact-address address p span{
+#contact .content-inner .contact-content .contact-address address p span {
     color: #465f91;
 }
 
@@ -709,7 +724,7 @@ body {
 }
 
 #contact .content-inner .contact-content .contact-address .social-icons i:hover {
-    color: #000;
+    color: #465f91;
 }
 
 
@@ -724,12 +739,28 @@ body {
     margin-right: 10vw;
 }
 
-#contact .content-inner .contact-content .contact-form h4 {
-    margin-top: 0;
+#contact .content-inner .contact-content .contact-form .shape {
+    text-align: center;
     background-color: #151515;
-    padding: 10px;
-    text-transform: uppercase;
+    width: 30vw;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    position: relative;
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#contact .content-inner .contact-content .contact-form .shape::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-top: 40px solid #151515;
+    border-right: 40px solid transparent;
+    position: absolute;
+    left: 100%;
+    top: 0px;
 }
 
 #contact .content-inner .contact-content .contact-form form {
@@ -763,9 +794,17 @@ textarea {
     font-size: 12px;
 }
 
-
 #contact .content-inner .contact-content .contact-form form input[type="submit"] {
     width: 10vw;
+    background-color: #465f91;
+    color: #fff;
+    cursor: pointer;
+}
+
+#contact .content-inner .contact-content .contact-form form input[type="submit"]:hover{
+    border: 1px solid #465f91;
+    background-color: #fff;
+    color: #465f91;
 }
 
 #contact .content-inner .contact-content #map {
@@ -786,10 +825,11 @@ footer {
     -ms-flex-order: 5;
     order: 5;
     width: 100%;
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
 }
 
-footer p{
-    margin: 0;
+footer p {
+    margin: 2px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
