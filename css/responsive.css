@@ -1,0 +1,23 @@
+/*RWD 1200px - 922px - 768px -520px*/
+
+/*BIG SCREENS*/
+
+@media all and (max-width:1200px) {
+}
+
+/*MEDIUM SCREENS*/
+
+@media all and (max-width:922px) {
+    
+}
+
+/*SMALL SCREENS*/
+
+@media all and (max-width:768px) {
+}
+
+
+/*EXTRA SMALL SCREENS*/
+
+@media all and (max-width: 520px) {
+}

@@ -61,8 +61,8 @@ function goDown() {
     if (currentSlideNumber !== totalSlideNumber - 1) {
         currentSlideNumber++;
         nextItem();
-        activeSlide();
         scrollLinksActive();
+        fadingElements();
     }
     slideDurationTimeout(slideDurationSetting);
 }
@@ -74,10 +74,9 @@ function goUp() {
         currentSlideNumber--;
     }
     previousItem();
-    activeSlide();
     scrollLinksActive();
+    fadingElements();
     slideDurationTimeout(slideDurationSetting);
-
 }
 
 
@@ -114,8 +113,9 @@ function goto(slide) {
         }
     } else if (currentSlideNumber == 2) {
         if (slide == 0) {
-            goUp();
-            goUp();
+            for (var i = 0; i < 2; i++) {
+                goUp();
+            }
         } else if (slide == 1) {
             goUp();
         } else if (slide == 3) {
@@ -190,13 +190,6 @@ function previousItem() {
     currentSlide.removeClass("down-scroll").addClass("up-scroll");
 }
 
-function activeSlide() {
-    var aSlide = $('.background').eq(currentSlideNumber);
-    aSlide.addClass('active');
-    aSlide.siblings().removeClass('active');
-    
-}
-
 //========ADD CLASS ACTIVE TO NAV - SCROLL & CLICK=======//
 function clickLinksActive() {
     $("li").click(function () {
@@ -211,6 +204,24 @@ function scrollLinksActive() {
     var currentLink = $('li').eq(currentSlideNumber);
     currentLink.addClass('active');
     currentLink.siblings().removeClass('active');
+}
+
+//============FADING (HIDE/SHOW) ELEMENTS=========// 
+
+function fadingElements() {
+    var skills = $('.skills-boxes');
+    var projects = $('.projects-boxes');
+    if (currentSlideNumber !== 2) {
+        skills.stop().fadeOut();
+    } else {
+        skills.stop().fadeIn(2000);
+    }
+
+    if (currentSlideNumber !== 3) {
+        projects.stop().fadeOut();
+    } else {
+        projects.stop().fadeIn(2000);
+    }
 }
 
 //====================TYPEWRITER EFFECT======================//
@@ -243,7 +254,7 @@ function typewriter() {
     while (Row < Index) {
         Contents += Text[Row++] + '<br />';
     }
-    destination.html(Contents + Text[Index].substring(0, TextPos) + "<span>_</span>"); 
+    destination.html(Contents + Text[Index].substring(0, TextPos) + "<span>_</span>");
     if (TextPos++ == ArrLength) {
         TextPos = 0;
         Index++;
@@ -257,15 +268,18 @@ function typewriter() {
 }
 
 
-//================GOOGLE MAP API=================//
+//================GOOGLE MAPS API=================//
 function initMap() {
-        var uluru = {lat: 50.06465009999999, lng: 19.94497990000002};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 8,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
+    var uluru = {
+        lat: 50.06465009999999,
+        lng: 19.94497990000002
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+    });
+}

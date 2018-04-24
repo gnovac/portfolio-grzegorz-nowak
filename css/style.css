@@ -192,6 +192,7 @@ body {
     backface-visibility: hidden;
     -webkit-transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
     transition: all 1.7s cubic-bezier(0.22, 0.44, 0, 1);
+    margin: 0 100px 0 100px;
 }
 
 .background.up-scroll {
@@ -324,7 +325,7 @@ body {
 
 .background .content-inner .content-title {
     margin-top: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 10px;
     font-size: 50px;
     font-family: 'Montserrat', sans-serif;
     color: #465f91;
@@ -334,19 +335,22 @@ body {
     color: #465f91;
     font-family: 'La Belle Aurore', cursive;
     text-align: left;
-    margin-left: 25px;
     font-size: 25px;
 }
 
 /*==================HEADER TYPEWRITING=============*/
+
+#home .content-inner {
+    margin: 0;
+}
 
 #typedtext {
     font-family: 'La Belle Aurore', cursive;
     font-size: 25px;
     letter-spacing: 6px;
     text-align: left;
-    margin-left: 23vw;
-    margin-bottom: 16vh;
+    margin-left: 300px;
+    margin-bottom: 100px;
     color: #465f91;
 }
 
@@ -357,14 +361,14 @@ body {
 
 #typedtext h3 {
     font-size: 25px;
-    margin-left: 5vw;
+    margin-left: 75px;
     margin-bottom: 0;
     margin-top: 0;
     font-weight: normal;
 }
 
 #typedtext h1 {
-    margin-left: 10vw;
+    margin-left: 130px;
     margin-bottom: 0;
     margin-top: 0;
     font-family: 'Waiting for the Sunrise', cursive;
@@ -485,8 +489,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-left: 10vh;
-    margin-right: 70vh;
+    margin-right: 400px;
 }
 
 .skills-boxes figure img {
@@ -510,8 +513,8 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 130px;
+    margin-right: 130px;
 }
 
 .image-box {
@@ -522,7 +525,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     margin: 0;
-    max-width: 320px;
+    max-width: 250px;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -550,8 +553,8 @@ body {
 
 .image-box img {
     vertical-align: top;
-    width: 320px;
-    height: 200px;
+    width: 250px;
+    height: 160px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -626,6 +629,10 @@ body {
 
 /*================CONTACT SECTION===============*/
 
+#contact .content-inner{
+    margin: 0;
+}
+
 #contact .content-inner .contact-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -636,19 +643,12 @@ body {
     flex-flow: row wrap;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    margin: 0 15vh 0 15vh;
+    margin: 0 100px 0 100px;
 }
 
 #contact .content-inner .content-title {
     margin-top: 0;
     margin-bottom: 0;
-}
-
-#contact .content-inner .contact-content .tag1 {
-    width: 100%;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
 }
 
 #contact .content-inner .contact-content .contact-address {
@@ -659,7 +659,7 @@ body {
     -ms-flex-positive: 1;
     -ms-flex: 1 1 30%;
     flex: 1 1 30%;
-    margin-right: 5vw;
+    margin-right: 75px;
 }
 
 #contact .content-inner .contact-content .contact-address address {
@@ -704,8 +704,8 @@ body {
 
 #contact .content-inner .contact-content .contact-address address p,
 .social-icons {
-    margin-bottom: 1vh;
-    margin-top: 1vh;
+    margin-bottom: 5px;
+    margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
     width: 80%;
     font-weight: 700;
@@ -736,7 +736,7 @@ body {
     -ms-flex-positive: 1;
     -ms-flex: 1 1 30%;
     flex: 1 1 10%;
-    margin-right: 10vw;
+    margin-right: 130px;
 }
 
 #contact .content-inner .contact-content .contact-form .shape {
@@ -783,7 +783,7 @@ body {
 textarea {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 3vh;
+    margin-bottom: 15px;
     width: 100%;
     border-radius: 3px;
     border: none;
@@ -795,7 +795,8 @@ textarea {
 }
 
 #contact .content-inner .contact-content .contact-form form input[type="submit"] {
-    width: 10vw;
+    width: 100px;
+    padding: 12px;
     background-color: #465f91;
     color: #fff;
     cursor: pointer;
@@ -812,6 +813,12 @@ textarea {
     width: 75%;
 }
 
+#contact .content-inner .contact-content .tag1 {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+}
 
 #contact .content-inner .contact-content .tag2 {
     width: 100%;
