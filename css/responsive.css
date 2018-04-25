@@ -61,7 +61,7 @@
     }
 
     .projects-boxes {
-        margin: 0;
+        margin: 5px 0 5px 0
     }
 
     .skills-boxes figure img {
@@ -70,12 +70,12 @@
     }
 
     .image-box {
-        max-width: 180px;
+        max-width: 140px;
     }
 
     .image-box img {
-        width: 180px;
-        height: 75px;
+        width: 140px;
+        height: 140px;
     }
 
     #contact .content-inner .contact-content {
@@ -113,7 +113,7 @@
     }
 
     #contact .content-inner .contact-content .contact-address .shape {
-        width: 80vw;
+        width: 70vw;
         margin: 10px 0;
         height: 30px;
         line-height: 30px;
@@ -147,5 +147,9 @@
 
     #contact .content-inner .contact-content #map {
         display: none;
+    }
+    
+    footer p{
+        margin-bottom: 20px;
     }
 }
