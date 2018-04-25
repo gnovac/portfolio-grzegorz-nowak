@@ -28,6 +28,9 @@
 
     .background .content-inner {
         margin: 0 25px 0 20px;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
     }
 
     .background .content-inner .content-title {
@@ -48,8 +51,8 @@
         margin-left: 75px;
         font-size: 30px;
     }
-    
-    .scroll-downs{
+
+    .scroll-downs {
         display: none;
     }
 
@@ -62,17 +65,17 @@
     }
 
     .skills-boxes figure img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
     .image-box {
-        max-width: 150px;
+        max-width: 180px;
     }
 
     .image-box img {
-        width: 150px;
-        height: 100px;
+        width: 180px;
+        height: 75px;
     }
 
     #contact .content-inner .contact-content {
@@ -81,27 +84,32 @@
         -webkit-box-direction: normal;
         -ms-flex-flow: column;
         flex-flow: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
     }
 
     #contact .content-inner .content-title {
         margin-top: 10px;
+        margin-bottom: 10px;
     }
-    
-    #contact .content-inner .contact-content .tags{
+
+    #contact .content-inner .contact-content .tag1 {
         margin-left: 40px;
     }
     
-    #contact .content-inner .contact-content .contact-address{
+
+    #contact .content-inner .contact-content .contact-address {
         -webkit-box-flex: 0;
         -ms-flex: none;
         flex: none;
     }
-    
-    #contact .content-inner .contact-content .contact-form{
+
+    #contact .content-inner .contact-content .contact-form {
         -webkit-box-flex: 0;
         -ms-flex: none;
         flex: none;
-        
+
     }
 
     #contact .content-inner .contact-content .contact-address .shape {
@@ -112,10 +120,7 @@
     }
 
     #contact .content-inner .contact-content .contact-form .shape {
-        width: 80vw;
-        margin: 10px 0;
-        height: 30px;
-        line-height: 30px;
+        display: none;
     }
 
     #contact .content-inner .contact-content .contact-address .shape::before {
@@ -132,11 +137,8 @@
     }
 
     #contact .content-inner .contact-content .contact-form {
-        margin: 0 20px;
-    }
-    
-    #contact .content-inner .contact-content .contact-form form{
-        margin: 0 40px;
+        margin: 0;
+        width: 70vw;
     }
 
     #contact .content-inner .contact-content .contact-form form textarea {
