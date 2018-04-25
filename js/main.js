@@ -206,6 +206,20 @@ function scrollLinksActive() {
     currentLink.siblings().removeClass('active');
 }
 
+
+//============MENU TOOGLE FOR MOBILE DEVICES===========//
+
+$(".menu-toggle").on('click', function () {
+    $(this).toggleClass("on");
+    $('.menu-section').toggleClass("on");
+    $("nav ul").toggleClass('hidden');
+});
+
+$('li').on('click', function() {
+    $('.menu-toggle').toggleClass("on");
+    $('ul').toggleClass('hidden');
+});
+
 //============FADING (HIDE/SHOW) ELEMENTS=========// 
 
 function fadingElements() {

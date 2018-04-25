@@ -22,171 +22,178 @@
             <div class="circle"></div>
         </div>
     </div>
+    <!---------------HAMBURGER ICON FOR RWD--------------------->
+    <div class="menu-section">
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
 
 
-    <!------------VERTICAL DOTS NAVIGATION-------------->
-    <nav id="main-nav">
-        <ul>
-            <li class="active" onclick="goto(0);">
-                <a href="#home">
+        <!------------VERTICAL DOTS NAVIGATION-------------->
+        <nav id="main-nav">
+            <ul class="hidden">
+                <li class="active " onclick="goto(0);">
+                    <a href="#home">
 					<span class="dots"></span>
 					<span class="tooltip">Home</span>
 				</a>
-            </li>
-            <li onclick="goto(1);">
-                <a href="#about">
+                </li>
+                <li onclick="goto(1);">
+                    <a href="#about">
 					<span class="dots"></span>
 					<span class="tooltip">O mnie</span>
 				</a>
-            </li>
-            <li onclick="goto(2);">
-                <a href="#skills">
+                </li>
+                <li onclick="goto(2);">
+                    <a href="#skills">
 					<span class="dots"></span>
 					<span class="tooltip">Technologie</span>
 				</a>
-            </li>
-            <li onclick="goto(3);">
-                <a href="#projects">
+                </li>
+                <li onclick="goto(3);">
+                    <a href="#projects">
 					<span class="dots"></span>
 					<span class="tooltip">Projekty</span>
 				</a>
-            </li>
-            <li onclick="goto(4);">
-                <a href="#contact">
+                </li>
+                <li onclick="goto(4);">
+                    <a href="#contact">
 					<span class="dots"></span>
 					<span class="tooltip">Kontakt</span>
 				</a>
-            </li>
-        </ul>
-    </nav>
+                </li>
+            </ul>
+        </nav>
 
-    <!---------------FULL ONE PAGE PARALLAX----------------->
-    <div id="full-page" class="container">
-        <!--       HEADER SECTION START-->
-        <header id="home" class="background">
-            <div class="content-inner">
-                <div id="typedtext"></div>
-            </div>
-            <!-------animated scroll mouse icon------->
-            <div class="scroll-downs">
-                <div class="mousey">
-                    <div class="scroller"></div>
+        <!---------------FULL ONE PAGE PARALLAX----------------->
+        <div id="full-page" class="container">
+            <!--       HEADER SECTION START-->
+            <header id="home" class="background">
+                <div class="content-inner">
+                    <div id="typedtext"></div>
                 </div>
-            </div>
-        </header>
-        <!--        ABOUT SECTION START-->
-        <section id="about" class="background">
-            <div class="content-inner">
-                <h2 class="content-title">O mnie</h2>
-                <div class="tags">&ltabout&gt</div>
-                <p>work in progress...</p>
-                <div class="tags">&lt/about&gt</div>
-            </div>
-        </section>
-        <!--        SKILLS SECTION START-->
-        <section id="skills" class="background">
-            <div class="content-inner">
-                <h2 class="content-title">Technologie</h2>
-                <div class="tags">&ltskills&gt</div>
-                <div class="skills-boxes">
-                    <figure>
-                        <img src="img/html5.png" alt="html icon">
-                        <figcaption>HTML5</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/css3.png" alt="css3 icon">
-                        <figcaption>CSS3</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/javascript.png" alt="javascript icon">
-                        <figcaption>JavaScript</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/jquery.png" alt="jquery icon">
-                        <figcaption>jQuery</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/bootstrap.png" alt="bootstrap 4 icon">
-                        <figcaption>Bootstrap 4</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/sass.png" alt="sass icon">
-                        <figcaption>SASS</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/github.png" alt="github icon">
-                        <figcaption>GitHub</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/wordpress.png" alt="wordpress icon">
-                        <figcaption>WordPress</figcaption>
-                    </figure>
+                <!-------animated scroll mouse icon------->
+                <div class="scroll-downs">
+                    <div class="mousey">
+                        <div class="scroller"></div>
+                    </div>
                 </div>
-                <div class="tags">&lt/skills&gt</div>
-            </div>
-        </section>
-        <!--                PROJECTS SECTION START-->
-        <section id="projects" class="background">
-            <div class="content-inner">
-                <h2 class="content-title">Projekty</h2>
-                <div class="tags">&ltprojects&gt</div>
-                <div class="projects-boxes">
-                    <figure class="image-box">
-                        <img src="img/pax-template-image.jpg" alt="minaturka strony psd-pax-template" />
-                        <figcaption>
-                            <h3>PSD PAX <span>Template</span></h3>
-                            <p>Zakodowany PSD w pełni responsywny</p>
-                        </figcaption>
-                        <a href="https://gnovac.github.io/psd-pax-template/"></a>
-                    </figure>
-                    <figure class="image-box"><img src="img/memory_game1-650x325.jpg" alt="minaturka gry memory" />
-                        <figcaption>
-                            <h3>Memory <span>Game</span></h3>
-                            <p>Gra pamięciowa oparta o JavaScript</p>
-                        </figcaption>
-                        <a href="https://gnovac.github.io/memory-game-js/"></a>
-                    </figure>
-                    <figure class="image-box"><img src="img/portfolio-project.png" alt="minaturka strony portfolio-project" />
-                        <figcaption>
-                            <h3>Portfolio <span>Project</span></h3>
-                            <p>Projekt wykonany w ramach bootcampa</p>
-                        </figcaption>
-                        <a href="https://gnovac.github.io/akademia-108-portfolio/"></a>
-                    </figure>
-                    <figure class="image-box"><img src="img/bootstrap-project.jpg" alt="minaturka strony bootstrap-project" />
-                        <figcaption>
-                            <h3>Bootstrap <span>Project</span></h3>
-                            <p>Projekt oparty o technologie Bootstrap wykonany w ramach bootcampa</p>
-                        </figcaption>
-                        <a href="https://gnovac.github.io/akademia-108-bootstrap-project/"></a>
-                    </figure>
-                    <figure class="image-box"><img src="img/github-image.png" alt="minaturka ikony githuba" />
-                        <figcaption>
-                            <h3>GitHub</h3>
-                            <p>Zbiór mini projektów z bootcampa</p>
-                        </figcaption>
-                        <a href="https://github.com/BleckDerr"></a>
-                    </figure>
-                    <figure class="image-box"><img src="img/replit.png" alt="minaturka ikony githuba" />
-                        <figcaption>
-                            <h3>Repl.it</h3>
-                            <p>Zbiór prostych kodów z bootcampa</p>
-                        </figcaption>
-                        <a href="https://repl.it/@BleckDerr"></a>
-                    </figure>
+            </header>
+            <!--        ABOUT SECTION START-->
+            <section id="about" class="background">
+                <div class="content-inner">
+                    <h2 class="content-title">O mnie</h2>
+                    <div class="tags">&ltabout&gt</div>
+                    <p>work in progress...</p>
+                    <div class="tags">&lt/about&gt</div>
+                </div>
+            </section>
+            <!--        SKILLS SECTION START-->
+            <section id="skills" class="background">
+                <div class="content-inner">
+                    <h2 class="content-title">Technologie</h2>
+                    <div class="tags">&ltskills&gt</div>
+                    <div class="skills-boxes">
+                        <figure>
+                            <img src="img/html5.png" alt="html icon">
+                            <figcaption>HTML5</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/css3.png" alt="css3 icon">
+                            <figcaption>CSS3</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/javascript.png" alt="javascript icon">
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/jquery.png" alt="jquery icon">
+                            <figcaption>jQuery</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/bootstrap.png" alt="bootstrap 4 icon">
+                            <figcaption>Bootstrap 4</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/sass.png" alt="sass icon">
+                            <figcaption>SASS</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/github.png" alt="github icon">
+                            <figcaption>GitHub</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/wordpress.png" alt="wordpress icon">
+                            <figcaption>WordPress</figcaption>
+                        </figure>
+                    </div>
+                    <div class="tags">&lt/skills&gt</div>
+                </div>
+            </section>
+            <!--                PROJECTS SECTION START-->
+            <section id="projects" class="background">
+                <div class="content-inner">
+                    <h2 class="content-title">Projekty</h2>
+                    <div class="tags">&ltprojects&gt</div>
+                    <div class="projects-boxes">
+                        <figure class="image-box">
+                            <img src="img/pax-template-image.jpg" alt="minaturka strony psd-pax-template" />
+                            <figcaption>
+                                <h3>PSD PAX <span>Template</span></h3>
+                                <p>Zakodowany PSD w pełni responsywny</p>
+                            </figcaption>
+                            <a href="https://gnovac.github.io/psd-pax-template/"></a>
+                        </figure>
+                        <figure class="image-box"><img src="img/memory_game1-650x325.jpg" alt="minaturka gry memory" />
+                            <figcaption>
+                                <h3>Memory <span>Game</span></h3>
+                                <p>Gra pamięciowa oparta o JavaScript</p>
+                            </figcaption>
+                            <a href="https://gnovac.github.io/memory-game-js/"></a>
+                        </figure>
+                        <figure class="image-box"><img src="img/portfolio-project.png" alt="minaturka strony portfolio-project" />
+                            <figcaption>
+                                <h3>Portfolio <span>Project</span></h3>
+                                <p>Projekt wykonany w ramach bootcampa</p>
+                            </figcaption>
+                            <a href="https://gnovac.github.io/akademia-108-portfolio/"></a>
+                        </figure>
+                        <figure class="image-box"><img src="img/bootstrap-project.jpg" alt="minaturka strony bootstrap-project" />
+                            <figcaption>
+                                <h3>Bootstrap <span>Project</span></h3>
+                                <p>Projekt oparty o technologie Bootstrap wykonany w ramach bootcampa</p>
+                            </figcaption>
+                            <a href="https://gnovac.github.io/akademia-108-bootstrap-project/"></a>
+                        </figure>
+                        <figure class="image-box"><img src="img/github-image.png" alt="minaturka ikony githuba" />
+                            <figcaption>
+                                <h3>GitHub</h3>
+                                <p>Zbiór mini projektów z bootcampa</p>
+                            </figcaption>
+                            <a href="https://github.com/BleckDerr"></a>
+                        </figure>
+                        <figure class="image-box"><img src="img/replit.png" alt="minaturka ikony githuba" />
+                            <figcaption>
+                                <h3>Repl.it</h3>
+                                <p>Zbiór prostych kodów z bootcampa</p>
+                            </figcaption>
+                            <a href="https://repl.it/@BleckDerr"></a>
+                        </figure>
 
+                    </div>
+                    <div class="tags">&lt/projects&gt</div>
                 </div>
-                <div class="tags">&lt/projects&gt</div>
-            </div>
-        </section>
-        <section id="contact" class="background">
-            <div class="content-inner">
-                <h2 class="content-title">Napisz do mnie</h2>
-                <div class="contact-content">
-                    <div class="tags tag1">&ltcontact&gt</div>
-                    <div class="contact-address">
-                        <div class="shape">Kontakt</div>
-                        <address>
+            </section>
+            <section id="contact" class="background">
+                <div class="content-inner">
+                    <h2 class="content-title">Napisz do mnie</h2>
+                    <div class="contact-content">
+                        <div class="tags tag1">&ltcontact&gt</div>
+                        <div class="contact-address">
+                            <div class="shape">Kontakt</div>
+                            <address>
                             <p>Grzegorz <span>Nowak</span></p>
                             <p>Kraków</p>
                             <div class="social-icons">
@@ -196,29 +203,29 @@
                             </div>
                             <div id="map"></div>
                         </address>
+                        </div>
+                        <div class="contact-form">
+                            <div class="shape">Formularz Kontaktowy</div>
+                            <form action="https://formspree.io/grzesiek6493@gmail.com" method="post">
+                                <input type="text" name="name" id="name" placeholder="Nazwa" required autofocus>
+                                <input type="mail" name="email" id="email" placeholder="Adres e-mail" required multiple>
+                                <textarea name="msg" id="msg" placeholder="Wiadomość" required></textarea>
+                                <input type="submit" value="Wyślij">
+                            </form>
+                        </div>
+                        <div class="tags tag2">&lt/contact&gt</div>
                     </div>
-                    <div class="contact-form">
-                        <div class="shape">Formularz Kontaktowy</div>
-                        <form action="https://formspree.io/grzesiek6493@gmail.com" method="post">
-                            <input type="text" name="name" id="name" placeholder="Nazwa" required autofocus>
-                            <input type="mail" name="email" id="email" placeholder="Adres e-mail" required multiple>
-                            <textarea name="msg" id="msg" placeholder="Wiadomość" required></textarea>
-                            <input type="submit" value="Wyślij">
-                        </form>
-                    </div>
-                    <div class="tags tag2">&lt/contact&gt</div>
+                    <footer>
+                        <p>Copyright &copy; Grzegorz Nowak</p>
+                    </footer>
                 </div>
-                <footer>
-                    <p>Copyright &copy; Grzegorz Nowak</p>
-                </footer>
-            </div>
-        </section>
-    </div>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/lodash.min.js"></script>
-    <script src="js/jquery.ba-throttle-debounce.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmDKKlSl6Ez7U0bsxIsTNcF_gkhjTlCxI&callback=initMap"></script>
-    <script src="js/main.js"></script>
+            </section>
+        </div>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/lodash.min.js"></script>
+        <script src="js/jquery.ba-throttle-debounce.min.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmDKKlSl6Ez7U0bsxIsTNcF_gkhjTlCxI&callback=initMap"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
