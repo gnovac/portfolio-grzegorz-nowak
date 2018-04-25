@@ -24,7 +24,7 @@ body {
     width: 100vw;
     height: 100vh;
     top: 0;
-    background-color: #1a1a1a;
+    background-color: #000;
     -webkit-transition: opacity 400ms ease-in-out, visibility 0s 400ms;
     transition: opacity 400ms ease-in-out, visibility 0s 400ms;
 }
@@ -242,7 +242,7 @@ body {
 #main-nav {
     z-index: 10;
     position: fixed;
-    right: 40px;
+    right: 20px;
     top: 50%;
     bottom: auto;
     -webkit-transform: translateY(-50%);
@@ -792,6 +792,10 @@ textarea {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 12px;
+}
+
+#contact .content-inner .contact-content .contact-form form textarea{
+    padding-bottom: 200px;
 }
 
 #contact .content-inner .contact-content .contact-form form input[type="submit"] {
