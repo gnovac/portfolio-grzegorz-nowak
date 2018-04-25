@@ -48,18 +48,17 @@
         margin-left: 75px;
         font-size: 30px;
     }
+    
+    .scroll-downs{
+        display: none;
+    }
 
     .skills-boxes {
         margin-right: 0;
     }
 
     .projects-boxes {
-        margin-left: 0;
-        margin-right: 20px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-        flex-flow: column;
+        margin: 0;
     }
 
     .skills-boxes figure img {
@@ -68,11 +67,11 @@
     }
 
     .image-box {
-        max-width: 200px;
+        max-width: 150px;
     }
 
     .image-box img {
-        width: 200px;
+        width: 150px;
         height: 100px;
     }
 
@@ -87,10 +86,18 @@
     #contact .content-inner .content-title {
         margin-top: 10px;
     }
-
-    #contact .content-inner .contact-content .tag1,
-    .tag2 {
-        display: none;
+    
+    #contact .content-inner .contact-content .contact-address{
+        -webkit-box-flex: 0;
+        -ms-flex: none;
+        flex: none;
+    }
+    
+    #contact .content-inner .contact-content .contact-form{
+        -webkit-box-flex: 0;
+        -ms-flex: none;
+        flex: none;
+        
     }
 
     #contact .content-inner .contact-content .contact-address .shape {
@@ -133,7 +140,6 @@
     }
 
     #contact .content-inner .contact-content #map {
-        height: 20vh;
-        width: 80%;
+        display: none;
     }
 }

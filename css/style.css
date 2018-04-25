@@ -629,7 +629,7 @@ body {
 
 /*================CONTACT SECTION===============*/
 
-#contact .content-inner{
+#contact .content-inner {
     margin: 0;
 }
 
@@ -641,6 +641,12 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin: 0 100px 0 100px;
@@ -794,7 +800,7 @@ textarea {
     font-size: 12px;
 }
 
-#contact .content-inner .contact-content .contact-form form textarea{
+#contact .content-inner .contact-content .contact-form form textarea {
     padding-bottom: 150px;
 }
 
@@ -806,7 +812,7 @@ textarea {
     cursor: pointer;
 }
 
-#contact .content-inner .contact-content .contact-form form input[type="submit"]:hover{
+#contact .content-inner .contact-content .contact-form form input[type="submit"]:hover {
     border: 1px solid #465f91;
     background-color: #fff;
     color: #465f91;
