@@ -750,7 +750,7 @@ body {
     width: 30vw;
     height: 40px;
     line-height: 40px;
-    margin: 20px auto;
+    margin: 20px 0;
     position: relative;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
