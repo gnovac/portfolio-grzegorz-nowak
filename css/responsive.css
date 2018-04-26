@@ -2,11 +2,52 @@
 
 /*BIG SCREENS*/
 
-@media all and (max-width:1200px) {}
+@media all and (min-width:1300px) {
+    #typedtext {
+        font-size: 30px;
+    }
+
+    #typedtext h1 {
+        font-size: 50px;
+    }
+
+    .background .content-inner .content-title {
+        font-size: 100px;
+    }
+
+    .background .content-inner .tags {
+        font-size: 50px;
+    }
+
+    .skills-boxes figure img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .image-box {
+        font-size: 24px;
+        max-width: 400px;
+    }
+    
+     .image-box img {
+        width: 400px;
+        height: 300px;
+    }
+}
 
 /*MEDIUM SCREENS*/
 
-@media all and (max-width:922px) {}
+@media all and (max-width:922px) {
+    .background:first-child {
+        background-image: none;
+        background-color: #000;
+    }
+
+    .background:nth-child(3) {
+        background-image: none;
+        background-color: #606162;
+    }
+}
 
 /*SMALL SCREENS*/
 
@@ -90,22 +131,28 @@
         float: none;
     }
 
+    #typedtext {
+        margin-left: 15vw;
+    }
+
+    #typedtext h1 {
+        margin-left: 75px;
+    }
+
+    .skills-boxes {
+        margin-right: 0;
+    }
+
+    .projects-boxes {
+        margin: 0;
+    }
+
 }
 
 
 /*EXTRA SMALL SCREENS*/
 
 @media all and (max-width: 520px) {
-    .background:first-child {
-        background-image: none;
-        background-color: #000;
-    }
-
-    .background:nth-child(3) {
-        background-image: none;
-        background-color: #606162;
-    }
-
     .background .content-inner {
         margin: 0;
         -webkit-box-pack: start;
@@ -117,31 +164,12 @@
         font-size: 25px;
     }
 
-
     #typedtext {
-        margin: 0;
         margin-left: 20px;
-    }
-
-    #typedtext h3 {
-        margin-left: 30px;
-    }
-
-    #typedtext h1 {
-        margin-left: 75px;
-        font-size: 30px;
     }
 
     .scroll-downs {
         display: none;
-    }
-
-    .skills-boxes {
-        margin-right: 0;
-    }
-
-    .projects-boxes {
-        margin: 0;
     }
 
     .skills-boxes figure img {
